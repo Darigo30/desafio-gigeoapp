@@ -1,0 +1,65 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 0;
+    &__perfil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &__img-perfil {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid $gclaro;
+        }
+        &__nombres {
+            padding-left: 30px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 14px;
+                color:$platinum;
+                font-size: $large;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__buttons {
+        &__msj {
+            background-color: $rosa;
+            border: none;
+            padding: 10px 20px;
+        }
+        &__follow {
+            background-color: $menta;
+            border: none;
+            padding: 10px 20px;
+            width: 120px;
+            margin-left: 15px;
+        }
+    }
+}
+hr{
+    width: 100%;
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .profile {
+        justify-content: center;
+        &__buttons {
+            display: none;
+        }
+        &__perfil {
+            &__nombres {
+                padding-left: 10px;
+            }
+        }
+    }
+    hr{
+        display: none;
+    }
+}

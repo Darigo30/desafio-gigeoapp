@@ -1,0 +1,23 @@
+.contenedor__main{
+    &-item{
+        img{
+            width: 100%;
+            height: 160px;
+        }
+        p{
+            font-size: 14px;
+            color:$platinum;
+            font-size: $large;
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .contenedor__main{
+        &-item{
+            img{
+                height: inherit;
+            }
+        }
+    }
+}

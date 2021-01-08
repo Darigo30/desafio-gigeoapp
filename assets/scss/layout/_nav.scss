@@ -1,0 +1,41 @@
+.contenedor__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px;
+    margin: 25px auto 0;
+    &__logo svg{
+        width: 200px;
+    }
+    &__lista ul {
+        display: flex;
+        list-style: none;
+    }
+    i {
+        padding: 20px 15px;
+        font-size: 25px;
+    }
+    & li:last-child {
+        color: #55595C;
+        i{
+            font-size: 30px;
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .contenedor__nav{
+        padding: 0px 10px 0px;
+        margin: 20px auto 0px;
+        & li:nth-child(-n+4){
+            display: none;
+        }
+        &__logo svg{
+            width: 160px;
+        }
+        i {
+            padding: 10px 15px;
+            font-size: 35px;
+        }
+    }
+}
+

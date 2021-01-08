@@ -1,0 +1,17 @@
+.contenedor {
+    &__header {
+        height: 200px;
+        background-image: url(../img/image-banner.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .contenedor {
+        &__header {
+            height: 80px;
+        }
+    }
+}

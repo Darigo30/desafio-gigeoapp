@@ -1,0 +1,12 @@
+@import 'nav';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'forms';
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 20px;
+}
